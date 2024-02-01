@@ -7,7 +7,6 @@ class MyAccount(
     private val bank: Bank,
     private val securities: Securities
 ) {
-
     fun get(): Accounts {
         return Accounts(bank.findAll(), securities.findAll())
     }
